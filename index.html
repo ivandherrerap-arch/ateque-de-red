@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio educativo sobre ataques de red: DoS, DDoS, MITM y Sniffing.">
+  <title>Ataques de red: DoS, DDoS, MITM y Sniffing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav container">
+      <div class="brand">CYBER<span>SECURITY</span></div>
+      <div class="nav-links">
+        <a href="#introduccion">Introducción</a>
+        <a href="#ataques">Ataques</a>
+        <a href="#comparacion">Comparación</a>
+        <a href="#prevencion">Prevención</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <div>
+        <p class="eyebrow">COM22 · PRODUCCIÓN MULTIMEDIAL</p>
+        <h1>Ataques de red:<br><span>DoS, DDoS, MITM y Sniffing</span></h1>
+        <p class="lead">Una introducción a cuatro amenazas de red, sus características, riesgos y formas de prevención.</p>
+        <p class="student">Estudiante: <strong>Iván David Herrera Pautt</strong></p>
+      </div>
+      <div class="hero-card">
+        <div class="shield">🛡️</div>
+        <h2>Seguridad de redes</h2>
+        <p>Conocer las amenazas permite comprender mejor cómo proteger la información y la disponibilidad de los servicios digitales.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="introduccion">
+      <div class="section-heading">
+        <span>01</span>
+        <h2>Introducción</h2>
+      </div>
+      <div class="intro-grid">
+        <div>
+          <p>Las redes informáticas permiten conectar computadores, teléfonos, servidores y otros dispositivos para intercambiar información y utilizar servicios digitales. Esta conectividad es fundamental en instituciones educativas, empresas, bancos, hospitales y plataformas de comunicación. Sin embargo, también genera riesgos de seguridad que pueden afectar la disponibilidad, confidencialidad o integridad de la información.</p>
+          <p>Los ataques de red son acciones que buscan aprovechar debilidades de una comunicación, un sistema o un servicio. Entre los ejemplos más conocidos se encuentran los ataques de <strong>Denegación de Servicio (DoS)</strong>, <strong>Denegación de Servicio Distribuido (DDoS)</strong>, <strong>Man-in-the-Middle (MITM)</strong> y <strong>Sniffing</strong>. Aunque cada uno funciona de manera diferente, todos muestran la importancia de utilizar redes y sistemas correctamente protegidos.</p>
+          <p>Estudiar estos conceptos es importante porque ayuda a reconocer riesgos y a adoptar buenas prácticas de seguridad. La prevención incluye mantener los sistemas actualizados, utilizar conexiones cifradas, proteger las cuentas, controlar el acceso a las redes y monitorear comportamientos anormales. El objetivo de conocer estas amenazas no es aprender a atacarlas, sino comprender su impacto y las medidas que ayudan a reducirlo.</p>
+        </div>
+        <div class="image-placeholder">
+          <img src="img/portada.jpg" alt="Imagen representativa de ciberseguridad y redes">
+          <span>Figura 1. Representación de seguridad y redes informáticas.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="ataques">
+      <div class="container">
+        <div class="section-heading">
+          <span>02</span>
+          <h2>Tipos de ataques de red</h2>
+        </div>
+
+        <div class="cards">
+          <article class="attack-card">
+            <div class="card-number">01</div>
+            <h3>DoS</h3>
+            <p><strong>Denial of Service</strong> o denegación de servicio. Busca impedir que usuarios legítimos puedan acceder normalmente a un servicio o recurso de red. Su efecto principal está relacionado con la disponibilidad.</p>
+            <ul>
+              <li>Puede provocar lentitud o interrupciones.</li>
+              <li>Busca agotar recursos de un servicio.</li>
+              <li>La protección incluye monitoreo y filtrado de tráfico.</li>
+            </ul>
+          </article>
+
+          <article class="attack-card">
+            <div class="card-number">02</div>
+            <h3>DDoS</h3>
+            <p><strong>Distributed Denial of Service</strong> es una variante distribuida de la denegación de servicio. El tráfico malicioso puede proceder de numerosos dispositivos o fuentes, haciendo más complejo identificar y mitigar el problema.</p>
+            <ul>
+              <li>Afecta principalmente la disponibilidad.</li>
+              <li>Puede involucrar muchas fuentes simultáneas.</li>
+              <li>Se puede mitigar con servicios especializados y controles de tráfico.</li>
+            </ul>
+          </article>
+
+          <article class="attack-card">
+            <div class="card-number">03</div>
+            <h3>MITM</h3>
+            <p><strong>Man-in-the-Middle</strong> describe una situación en la que un tercero se interpone entre dos partes que se están comunicando. El riesgo consiste en que la información pueda ser observada o alterada cuando la comunicación no está adecuadamente protegida.</p>
+            <ul>
+              <li>Puede comprometer la confidencialidad.</li>
+              <li>Las redes inseguras aumentan el riesgo.</li>
+              <li>El cifrado y la autenticación ayudan a prevenirlo.</li>
+            </ul>
+          </article>
+
+          <article class="attack-card">
+            <div class="card-number">04</div>
+            <h3>Sniffing</h3>
+            <p>El <strong>sniffing</strong> consiste en capturar y analizar paquetes que circulan por una red. Los administradores pueden utilizar herramientas de análisis con fines legítimos, pero una captura no autorizada puede exponer información cuando las comunicaciones no están protegidas.</p>
+            <ul>
+              <li>Analiza tráfico de red.</li>
+              <li>Puede revelar información en conexiones inseguras.</li>
+              <li>El cifrado reduce la exposición de los datos.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="image-placeholder wide">
+          <img src="img/dos-ddos.jpg" alt="Diagrama educativo sobre DoS y DDoS">
+          <span>Figura 2. Comparación conceptual entre DoS y DDoS.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="comparacion">
+      <div class="section-heading">
+        <span>03</span>
+        <h2>Comparación de los ataques</h2>
+      </div>
+      <p>Los cuatro conceptos están relacionados con la seguridad de las comunicaciones, pero no tienen exactamente el mismo objetivo. DoS y DDoS se enfocan principalmente en afectar la disponibilidad de un servicio. MITM se relaciona con la interceptación o manipulación de una comunicación, mientras que Sniffing se centra en la captura y análisis del tráfico que circula por una red.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Ataque</th>
+              <th>Objetivo principal</th>
+              <th>Característica</th>
+              <th>Protección general</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DoS</td>
+              <td>Disponibilidad</td>
+              <td>Interrupción o saturación de un servicio</td>
+              <td>Filtrado, monitoreo y límites de tráfico</td>
+            </tr>
+            <tr>
+              <td>DDoS</td>
+              <td>Disponibilidad</td>
+              <td>Tráfico distribuido desde múltiples fuentes</td>
+              <td>Mitigación DDoS y monitoreo especializado</td>
+            </tr>
+            <tr>
+              <td>MITM</td>
+              <td>Confidencialidad e integridad</td>
+              <td>Intermediación en una comunicación</td>
+              <td>Cifrado, autenticación y redes confiables</td>
+            </tr>
+            <tr>
+              <td>Sniffing</td>
+              <td>Confidencialidad</td>
+              <td>Captura y análisis de tráfico</td>
+              <td>Cifrado y protección de la red</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="image-placeholder wide">
+        <img src="img/mitm.jpg" alt="Representación conceptual de un ataque MITM">
+        <span>Figura 3. Representación conceptual de una comunicación protegida frente a intermediarios.</span>
+      </div>
+    </section>
+
+    <section class="section alt" id="ejemplos">
+      <div class="container">
+        <div class="section-heading">
+          <span>04</span>
+          <h2>Ejemplos y casos prácticos</h2>
+        </div>
+        <div class="examples-grid">
+          <div class="example">
+            <span>DOs / DDoS</span>
+            <h3>Servicio no disponible</h3>
+            <p>Una empresa puede experimentar que su sitio web funciona con mucha lentitud o deja de responder debido a un volumen anormal de solicitudes. En una situación distribuida, las solicitudes pueden proceder de muchas fuentes, por lo que la defensa requiere identificar patrones y filtrar el tráfico.</p>
+          </div>
+          <div class="example">
+            <span>MITM</span>
+            <h3>Comunicación insegura</h3>
+            <p>En una red pública o mal configurada, una comunicación sin protección adecuada puede quedar expuesta a intermediarios. Por eso es importante comprobar que los servicios utilicen cifrado y mecanismos de autenticación.</p>
+          </div>
+          <div class="example">
+            <span>Sniffing</span>
+            <h3>Análisis de tráfico</h3>
+            <p>Un administrador de red puede analizar paquetes para detectar problemas de conectividad o comportamientos anormales. Esta misma capacidad demuestra por qué las comunicaciones sensibles deben utilizar mecanismos de cifrado y controles de acceso.</p>
+          </div>
+        </div>
+
+        <div class="image-placeholder wide">
+          <img src="img/sniffing.jpg" alt="Representación educativa del análisis de tráfico de red">
+          <span>Figura 4. Análisis conceptual del tráfico que circula por una red.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="prevencion">
+      <div class="section-heading">
+        <span>05</span>
+        <h2>Prevención y buenas prácticas</h2>
+      </div>
+      <div class="prevention-grid">
+        <div class="prevention-card"><span>01</span><h3>Mantener sistemas actualizados</h3><p>Las actualizaciones corrigen vulnerabilidades y mejoran la seguridad de dispositivos y aplicaciones.</p></div>
+        <div class="prevention-card"><span>02</span><h3>Usar cifrado</h3><p>Las conexiones cifradas ayudan a proteger la información durante su transmisión y reducen el riesgo de exposición.</p></div>
+        <div class="prevention-card"><span>03</span><h3>Controlar el acceso</h3><p>Contraseñas seguras, autenticación y permisos adecuados reducen accesos no autorizados.</p></div>
+        <div class="prevention-card"><span>04</span><h3>Monitorear la red</h3><p>Observar el tráfico y detectar comportamientos anormales permite responder con mayor rapidez ante incidentes.</p></div>
+      </div>
+    </section>
+
+    <section class="section conclusion">
+      <div class="container">
+        <div class="section-heading">
+          <span>06</span>
+          <h2>Conclusión</h2>
+        </div>
+        <p>Los ataques DoS, DDoS, MITM y Sniffing representan riesgos diferentes dentro de la seguridad de redes. Mientras los dos primeros afectan principalmente la disponibilidad, MITM y Sniffing pueden comprometer la confidencialidad o la integridad de las comunicaciones. Comprender estas diferencias permite identificar mejor los riesgos y seleccionar medidas de protección apropiadas.</p>
+        <p>En la industria actual, donde gran parte de las actividades dependen de servicios conectados a Internet, la seguridad de las redes es un elemento esencial. La prevención no depende de una única herramienta: requiere combinar actualización de sistemas, cifrado, autenticación, control de acceso, monitoreo y educación de los usuarios. Conocer las amenazas es, por tanto, un primer paso para construir redes más confiables y resistentes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <strong>Ataques de red</strong>
+        <p>DoS · DDoS · MITM · Sniffing</p>
+      </div>
+      <div class="footer-right">
+        <p>Derechos reservados © 2026</p>
+        <p>Iván David Herrera Pautt</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
